@@ -17,6 +17,7 @@ import itertools
 #  'What the', 'What th', 'What t', 'What ', 'What', 'Wha', 'Wh', 'W']
 
 def input_nput_put_ut_t(input_str: str) -> list:
+	
 	ret_list = []
 	
 	new_str = input_str
@@ -37,6 +38,7 @@ def input_nput_put_ut_t(input_str: str) -> list:
 #def vector_addition(v1: list, v2: list) -> list:
 
 def vector_addition(v1:list,v2:list) -> list:
+    
     ret_list = []
     
     for i in range (0,len(v1)):
@@ -64,7 +66,7 @@ def find_equal_sum_slice(list1: list, list2: list) -> [int, int, int, int]:
 			    for n in range (0,len(list2)):
 				    y=list2[m:n]
 					if sum(x)==sum(y):
-					   return i,l,m,n
+					   return i,l-1,m,n-1
 		
 
 
@@ -101,7 +103,7 @@ def subset_sum(s: set or list or tuple, k: int) -> set or list or tuple:
     for a in range (0,len(s)):
 		for b in list (itertools.combination(s,i)) :
 		    if sum(b)==k:
-			   return n 
+			   return b 
 
 	
     #raise NotImplementedError()
