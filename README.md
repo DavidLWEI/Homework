@@ -56,6 +56,7 @@ def vector_addition(v1:list,v2:list) -> list:
 # using enumeration is fine
 
 def find_equal_sum_slice(list1: list, list2: list) -> [int, int, int, int]:
+
     for i in range (0,len(list1)):
 	    for l in range (0,len(list1)):
 		    x=list1[i:l]
