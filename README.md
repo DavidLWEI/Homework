@@ -94,6 +94,7 @@ def find_equal_sum_slice(list1: list, list2: list) -> [int, int, int, int]:
 # Note: make use of itertools.combinations. See python documentation online
 
 def subset_sum(s: set or list or tuple, k: int) -> set or list or tuple:
+    
     for a in range (0,len(s)):
 		for b in list (itertools.combination(s,i)) :
 		    if sum(b)==k:
@@ -165,5 +166,5 @@ if __name__ == "__main__":
     unittest.main()
     #unittest is an boject
     #the unittest has a function named "main" that is predefined by Python
-	#the "main" function of unittest call all test functions in the unittest class
+    #the "main" function of unittest call all test functions in the unittest class
 
