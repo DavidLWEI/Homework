@@ -1,0 +1,19 @@
+li=[3,67,45,34,22,9,87,67,32,77]
+mid = len(li) // 2
+left = li[:mid]
+right = li[mid:]
+ll = merge_sort( left )
+rl =merge_sort( right )
+
+return merge(ll , rl)
+result = []
+while len(left)>0 and len(right)>0 :
+
+    if left[0] <= right[0]:
+        result.append( left.pop(0) )
+    else:
+        result.append( right.pop(0) )
+ 
+result += left
+result += right
+return result
